@@ -5,8 +5,8 @@ class User:
         self.name = name
         self.expense = Expense()
     
-    def add_expense(self, id, amount, category):
-        self.expense.expenses.append({'id': id,'amount': amount, 'category': category})
+    def add_expense(self, id, amount, category, date):
+        self.expense.expenses.append({'id': id,'amount': amount, 'category': category, 'date': date})
     
     def remove_expenses(self, index):
         if self.expense.expenses.pop(index):
@@ -33,7 +33,7 @@ class User:
         return expenses_by_category
 
 user = User("John Doe")
-user.add_expense(1, 100, "Food")
-user.add_expense(2, 50, "Transport")
+user.add_expense(1, 100, "Food", "2023-01-01")
+user.add_expense(2, 50, "Transport", "2023-01-02")
 print(user.get_total_expenses())
 print(user.get_expenses_by_category("Food"))
