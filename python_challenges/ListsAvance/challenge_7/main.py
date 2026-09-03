@@ -5,7 +5,9 @@ def transformer_imbriquee(liste, transformer):
 
     for ele in liste:
         if isinstance(ele, list):
-            resultat.append(transformer_imbriquee(ele, transformer))
+
+            resu = map(transformer, ele)
+            resultat.append(list(resu))
         else:
             resultat.append(transformer(ele))
             
