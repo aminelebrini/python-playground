@@ -1,16 +1,8 @@
 liste = [1,2,5,[5,2],4] 
 def transformer_imbriquee(liste, transformer):
 
-    resultat = []
+    resu = map(lambda x: transformer_imbriquee(x, transformer) if isinstance(x, list) else transformer(x), liste)
 
-    for ele in liste:
-        if isinstance(ele, list):
-
-            resu = map(transformer, ele)
-            resultat.append(list(resu))
-        else:
-            resultat.append(transformer(ele))
-            
-    return resultat
+    return resu
 
 print(transformer_imbriquee(liste, lambda x: x * 2))
