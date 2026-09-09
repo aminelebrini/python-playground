@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "nom": "Alice",
+        "departement": "Tech",
+        "salary": 300
+    },
+    {
+        "id": 1,
+        "nom": "Alice",
+        "departement": "Tech",
+        "salary": 300
+    },
+    {
+        "id": 2,
+        "nom": "Bob",
+        "departement": "Tech",
+        "salary": 200
+    },
+    {
+        "id": 3,
+        "nom": "Charlie",
+        "departement": "RH",
+        "salary": 300
+    },
+    {
+        "id": 4,
+        "nom": "David",
+        "departement": "Marketing",
+        "salary": 150
+    },
+    {
+        "id": 4,
+        "nom": "David",
+        "departement": "Marketing",
+        "salary": 150
+    },
+    {
+        "id": 5,
+        "nom": "Eve",
+        "departement": "Tech",
+        "salary": 200
+    },
+    {
+        "id": 6,
+        "nom": "Frank",
+        "departement": "RH",
+        "salary": null
+    },
+    {
+        "id": 7,
+        "nom": "Grace",
+        "departement": "Marketing",
+        "salary": null
+    }
+]
